@@ -1,8 +1,8 @@
 {
-  "name": "shifts-edit-ui",
+  "name": "typescript_react_webpack_template",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://github.com/nagasudhirpulla/open_shift_scheduler",
+  "homepage": "https://github.com/nagasudhirpulla/typescript_template",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "react-poppop": "^1.5.0"
