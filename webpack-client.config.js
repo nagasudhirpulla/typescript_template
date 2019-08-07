@@ -2,10 +2,16 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 const path = require('path');
 
 module.exports = {
-    entry: ['babel-polyfill', path.resolve(__dirname, 'src/index.tsx')],
+    entry: ['babel-polyfill', path.resolve(__dirname, 'src/client.tsx')],
+
+    output: {
+        filename: "client-bundle.js"
+    },
 
     // Enable sourcemaps for debugging webpack's output.
     devtool: "source-map",
+
+    target: 'electron-renderer',
 
     module: {
         rules: [
