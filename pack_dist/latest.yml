@@ -1,8 +1,8 @@
 version: 0.1.0
 files:
   - url: Electron-Template-App-Setup-0.1.0.exe
-    sha512: S/Bi3OXHg++kmkjA84iFJ3sG7Dc8JHlRURVjzKYT5TGjT026oSFVnLKvySyWvYQlsDldu62MlkiHW/2vTTQFsg==
-    size: 45138136
+    sha512: 3ehSQlVwMM9x2Sy1FyACJrmT6wBvGSRA+QKBrpXMfatvKDvwGEw4+Pw67vPWpS3L3nRW7UaokWVsAipiAlnmxg==
+    size: 45139503
 path: Electron-Template-App-Setup-0.1.0.exe
-sha512: S/Bi3OXHg++kmkjA84iFJ3sG7Dc8JHlRURVjzKYT5TGjT026oSFVnLKvySyWvYQlsDldu62MlkiHW/2vTTQFsg==
-releaseDate: '2019-08-08T09:52:12.845Z'
+sha512: 3ehSQlVwMM9x2Sy1FyACJrmT6wBvGSRA+QKBrpXMfatvKDvwGEw4+Pw67vPWpS3L3nRW7UaokWVsAipiAlnmxg==
+releaseDate: '2019-08-08T14:29:55.452Z'

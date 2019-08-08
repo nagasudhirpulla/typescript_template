@@ -2,8 +2,8 @@
   "name": "electron_react_webpack_typescript_template",
   "version": "0.1.0",
   "private": false,
-  "author":"Nagasudhir",
-  "description":"Electron + Webpack + React + Typescript template",
+  "author": "Nagasudhir",
+  "description": "Electron + Webpack + React + Typescript template",
   "main": "./dist/main.js",
   "homepage": "https://github.com/nagasudhirpulla/typescript_template",
   "dependencies": {
@@ -88,11 +88,11 @@
     },
     "win": {
       "target": "NSIS",
-      "icon" : "assets/img/posoco_logo.png"
+      "icon": "assets/img/posoco_logo.png"
     }
   },
   "scripts": {
-    "start": "electron dist/main.js",
+    "start": "./node_modules/.bin/electron dist/main.js",
     "build": "npm run build-client && npm run build-server",
     "build-server": "webpack --mode production --config webpack-server.config.js",
     "build-client": "webpack --mode production --config webpack-client.config.js",
