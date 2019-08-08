@@ -2,6 +2,8 @@
   "name": "electron_react_webpack_typescript_template",
   "version": "0.1.0",
   "private": false,
+  "author":"Nagasudhir",
+  "description":"Electron + Webpack + React + Typescript template",
   "main": "./dist/main.js",
   "homepage": "https://github.com/nagasudhirpulla/typescript_template",
   "dependencies": {
@@ -85,7 +87,8 @@
       ]
     },
     "win": {
-      "target": "NSIS"
+      "target": "NSIS",
+      "icon" : "assets/img/posoco_logo.png"
     }
   },
   "scripts": {

@@ -24,4 +24,5 @@ linux:
     - deb
 win:
   target: NSIS
+  icon: assets/img/posoco_logo.png
 electronVersion: 6.0.1
