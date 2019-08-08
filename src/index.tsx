@@ -12,11 +12,7 @@ let createWindow = () => {
         width: 450,
         height: 450
     });
-    win.loadURL(url.format({
-        pathname: path.join(__basedir, __dirname, "dist/index.html"),
-        protocol: "file:",
-        slashes: true,
-    }));
+    win.loadFile('./dist/index.html');
     win.on("closed", () => {
         win = null;
     });

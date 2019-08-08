@@ -1,0 +1,27 @@
+directories:
+  output: pack_dist
+  buildResources: build
+appId: electron_template_app
+asar: true
+productName: Electron Template App
+files:
+  - filter:
+      - dist/*
+nsis:
+  allowToChangeInstallationDirectory: true
+  oneClick: false
+dmg:
+  contents:
+    - x: 110
+      'y': 150
+    - x: 240
+      'y': 150
+      type: link
+      path: /Applications
+linux:
+  target:
+    - AppImage
+    - deb
+win:
+  target: NSIS
+electronVersion: 6.0.1

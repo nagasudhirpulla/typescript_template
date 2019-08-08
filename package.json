@@ -2,10 +2,13 @@
   "name": "electron_react_webpack_typescript_template",
   "version": "0.1.0",
   "private": false,
+  "main": "./dist/main.js",
   "homepage": "https://github.com/nagasudhirpulla/typescript_template",
   "dependencies": {
     "bootstrap": "^4.3.1",
-    "react-poppop": "^1.5.0"
+    "react-poppop": "^1.5.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   },
   "devDependencies": {
     "@babel/core": "^7.4.3",
@@ -33,8 +36,6 @@
     "electron-prebuilt": "^1.4.13",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
     "redux": "^4.0.0",
@@ -51,7 +52,14 @@
   },
   "build": {
     "appId": "electron_template_app",
+    "asar": true,
     "productName": "Electron Template App",
+    "files": [
+      "dist/*"
+    ],
+    "directories": {
+      "output": "pack_dist"
+    },
     "nsis": {
       "allowToChangeInstallationDirectory": true,
       "oneClick": false
@@ -85,6 +93,7 @@
     "build": "npm run build-client && npm run build-server",
     "build-server": "webpack --mode production --config webpack-server.config.js",
     "build-client": "webpack --mode production --config webpack-client.config.js",
-    "pack": "electron-builder \"dist/main.js\""
+    "pack": "rm -fr ./pack_dist && npm run electron-win-package",
+    "electron-win-package": "electron-builder dist/main.js"
   }
 }
