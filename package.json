@@ -49,10 +49,42 @@
     "webpack-cli": "^3.3.0",
     "webpack-dev-server": "^3.3.1"
   },
+  "build": {
+    "appId": "electron_template_app",
+    "productName": "Electron Template App",
+    "nsis": {
+      "allowToChangeInstallationDirectory": true,
+      "oneClick": false
+    },
+    "dmg": {
+      "contents": [
+        {
+          "x": 110,
+          "y": 150
+        },
+        {
+          "x": 240,
+          "y": 150,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    },
+    "win": {
+      "target": "NSIS"
+    }
+  },
   "scripts": {
     "start": "electron dist/main.js",
     "build": "npm run build-client && npm run build-server",
     "build-server": "webpack --mode production --config webpack-server.config.js",
-    "build-client": "webpack --mode production --config webpack-client.config.js"
+    "build-client": "webpack --mode production --config webpack-client.config.js",
+    "pack": "electron-builder \"dist/main.js\""
   }
 }
