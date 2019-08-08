@@ -9,6 +9,7 @@
 
 # production
 # /build
+/pack_dist
 
 # misc
 .DS_Store
